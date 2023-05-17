@@ -14,6 +14,8 @@ To uninstall, just double click setup-TenyaThermidor.exe again.
 
 Version 1.2
 
-- Add french translation 
+- Add french translation by Spartan117
 - Add french audio
-- Traify tp2
+- Traify tp2 and moved in main folder
+- EET compatibility (add cpmvars)
+- Up setup.exe
