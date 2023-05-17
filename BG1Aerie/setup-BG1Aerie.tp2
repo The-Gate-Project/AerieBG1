@@ -59,6 +59,7 @@ COMPILE ~BG1Aerie/Scripts/B2#cAAM1.baf~
 COMPILE ~BG1Aerie/Scripts/B2#cAAM2.baf~
 COMPILE ~BG1Aerie/Scripts/B2#cAAM3.baf~
 COMPILE ~BG1Aerie/Scripts/B2#cAAM4.baf~
+USING   ~BG1Aerie/tra/%s/B2#Ash.tra~
 COMPILE ~BG1Aerie/Scripts/B2#cAAM5.baf~
 
 // Copying files

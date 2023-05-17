@@ -18,7 +18,7 @@ THEN
     ApplyDamage("B2#Aeri2",5,CRUSHING)
     SmallWait(12)
     ActionOverride("B2#Aeri2",SetSequence(SEQ_SLEEP))
-    DisplayStringHead("B2#Ashur",~Проклятье, она противостояла яду! Взять их!~)
+    DisplayStringHead("B2#Ashur",@38)
     Wait(2)
     SetGlobal("B2#AeriAMB","GLOBAL",8)
     EndCutSceneMode()
