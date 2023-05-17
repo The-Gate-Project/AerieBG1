@@ -1,0 +1,9 @@
+IF
+  Dead("B2#Ashur")
+  Dead("B2#Tello")
+  Dead("B2#Kyte")
+THEN
+  RESPONSE #100
+    SetGlobal("B2#AeriAMB","GLOBAL",9)
+    StartDialogueNoSet([PC])
+END

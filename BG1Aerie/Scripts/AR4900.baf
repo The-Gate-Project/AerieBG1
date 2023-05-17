@@ -1,0 +1,25 @@
+IF
+GlobalTimerExpired("B2#Ash","GLOBAL")
+Global("B2#AshurExists","AR4900",0)
+THEN
+RESPONSE #100
+SetGlobal("B2#AshurExists","AR4900",1)
+CreateCreature("B2#Ashur",[2631.3230],0)
+END
+
+IF
+Global("B2#AeriQST","GLOBAL",1)
+Global("B2#KobExists","AR4900",0)
+THEN
+RESPONSE #100
+SetGlobal("B2#KobExists","AR4900",1)
+CreateCreature("B2#KOBCM",[3882.411],8)
+END
+
+IF
+Global("B2#AeriExists","AR4900",0)
+THEN
+RESPONSE #100
+SetGlobal("B2#AeriExists","AR4900",1)
+CreateCreature("B2#Aeri",[2355.3082],2)
+END

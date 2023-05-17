@@ -1,0 +1,13 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ActionOverride("B2#Aeri2",MoveToObject(Player1))
+    Wait(1)
+    ActionOverride("B2#Aeri2",FaceObject(Player1))
+    ActionOverride("B2#Aeri2",ForceSpell(Myself,CLERIC_CURE_LIGHT_WOUNDS))
+    SetGlobal("B2#AeriAMB","GLOBAL",11)
+    Wait(2)
+    ActionOverride("B2#Aeri2",StartDialogueNoSet([PC]))
+END

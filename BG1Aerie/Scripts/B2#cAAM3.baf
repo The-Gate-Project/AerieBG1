@@ -1,0 +1,67 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#Aeri2")
+    SetGlobal("B2#AeriAMB","GLOBAL",6)
+    ForceSpell("B2#Band1",WIZARD_MAGIC_MISSILE)
+    SmallWait(20)
+    Kill("B2#Band1")
+    SmallWait(10)
+    ForceSpell("B2#Band2",WIZARD_BURNING_HANDS)
+    SmallWait(20)
+    Kill("B2#Band2")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#Band1")
+    EquipMostDamagingMelee()
+    MoveToObject("B2#Aeri2")
+    SmallWait(12)
+    SetSequence(SEQ_ATTACK_JAB)
+    SmallWait(12)
+    SetSequence(SEQ_ATTACK_SLASH)
+    SmallWait(12)
+    SetSequence(SEQ_ATTACK_JAB)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#Band2")
+    EquipMostDamagingMelee()
+    MoveToObject("B2#Aeri2")
+    SmallWait(12)
+    SetSequence(SEQ_ATTACK_SLASH)
+    SmallWait(12)
+    SetSequence(SEQ_ATTACK_JAB)
+    SmallWait(12)
+    SetSequence(SEQ_ATTACK_SLASH)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#Tello")
+    SmallWait(74)
+    ForceSpell("B2#Aeri2",WIZARD_MAGIC_MISSILE)
+    SmallWait(20)
+    ActionOverride("B2#Aeri2",SetSequence(SEQ_SLEEP))
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#Ashur")
+    Wait(8)
+    EquipMostDamagingMelee()
+    MoveToObject("B2#Aeri2")
+    Wait(1)
+    StartDialogueNoSet([PC])
+END

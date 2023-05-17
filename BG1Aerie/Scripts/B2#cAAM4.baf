@@ -1,0 +1,25 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ActionOverride("B2#Aeri2",EquipMostDamagingMelee()
+    ActionOverride("B2#Aeri2",MoveToObject("B2#Ashur"))
+    ActionOverride("B2#Aeri2",FaceObject("B2#Ashur"))
+    ActionOverride("B2#Aeri2",SetSequence(SEQ_ATTACK_SLASH))
+    SmallWait(12)
+    ApplyDamage("B2#Ashur",5,CRUSHING)
+    SmallWait(12)
+    ActionOverride("B2#Aeri2",ForceSpell(Player1,CLERIC_ZONE_OF_SWEET_AIR))
+    Wait(2)
+    ActionOverride("B2#Ashur",FaceObject("B2#Aeri2"))
+    ActionOverride("B2#Ashur",SetSequence(SEQ_ATTACK_SLASH))
+    SmallWait(12)
+    ApplyDamage("B2#Aeri2",5,CRUSHING)
+    SmallWait(12)
+    ActionOverride("B2#Aeri2",SetSequence(SEQ_SLEEP))
+    DisplayStringHead("B2#Ashur",~Проклятье, она противостояла яду! Взять их!~)
+    Wait(2)
+    SetGlobal("B2#AeriAMB","GLOBAL",8)
+    EndCutSceneMode()
+END

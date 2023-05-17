@@ -1,0 +1,184 @@
+// --------------------------------------------
+// Basics
+BACKUP ~BG1Aerie/backup~
+AUTHOR ~Coutelier (mail@coutelier.org.uk)~
+
+// --------------------------------------------
+// BG1 Aerie Mod v1.1
+// --------------------------------------------
+
+// Language
+AUTO_TRA ~BG1Aerie/tra/%s~
+
+LANGUAGE 
+         ~English~
+         ~english~
+         ~BG1Aerie/tra/english/B1Asetup.tra~
+LANGUAGE 		 
+		 ~Russian (Alisia & Arcanecoast.ru)~
+         ~russian~
+         ~BG1Aerie/tra/russian/B1Asetup.tra~
+
+// Component setup
+BEGIN ~Aerie for BG:EE~
+
+// Audio
+
+COPY ~BG1Aerie/audio~ ~override~
+
+// Compiling dialogue...
+COMPILE ~BG1Aerie/dialogue/B2#Aeri.d~
+USING   ~BG1Aerie/tra/%s/B2#Aeri.tra~
+COMPILE ~BG1Aerie/dialogue/B2#AeriP.d~
+USING   ~BG1Aerie/tra/%s/B2#AeriP.tra~
+COMPILE ~BG1Aerie/dialogue/B2#Bent.d~
+USING   ~BG1Aerie/tra/%s/B2#Bent.tra~
+COMPILE ~BG1Aerie/dialogue/B2#Ash.d~
+USING   ~BG1Aerie/tra/%s/B2#Ash.tra~
+
+// Scripts
+  EXTEND_TOP ~ar4900.bcs~ ~BG1Aerie/scripts/ar4900.baf~
+    EVALUATE_BUFFER
+
+COMPILE ~BG1Aerie/Scripts/B2#Ashur.baf~
+COMPILE ~BG1Aerie/Scripts/B2#Ashu1.baf~
+COMPILE ~BG1Aerie/Scripts/B2#Aeri2.baf~
+COMPILE ~BG1Aerie/Scripts/B2#cAAM1.baf~
+COMPILE ~BG1Aerie/Scripts/B2#cAAM2.baf~
+COMPILE ~BG1Aerie/Scripts/B2#cAAM3.baf~
+COMPILE ~BG1Aerie/Scripts/B2#cAAM4.baf~
+COMPILE ~BG1Aerie/Scripts/B2#cAAM5.baf~
+
+// Copying files
+COPY ~BG1Aerie/shop~ ~override~
+COPY ~BG1Aerie/portraits~ ~override~
+
+// Items
+COPY ~BG1Aerie/items/B2#RNG1.itm~ ~override~
+  SAY NAME1 @0
+  SAY NAME2 @0
+  SAY DESC @1
+
+COPY ~BG1Aerie/items/B2#BTSA.itm~ ~override~
+  SAY NAME1 @2
+  SAY UNIDENTIFIED_DESC @2
+  SAY NAME2 @2
+  SAY DESC @3
+
+// Creatures
+COPY ~BG1Aerie/creatures/B2#Ashur.cre~ ~override/B2#Ashur.cre~
+  SAY NAME1 @6
+  SAY NAME2 @6
+COPY ~BG1Aerie/creatures/B2#Kyte.cre~ ~override/B2#Kyte.cre~
+  SAY NAME1 @7
+  SAY NAME2 @7
+COPY ~BG1Aerie/creatures/B2#Tello.cre~ ~override/B2#Tello.cre~
+  SAY NAME1 @8
+  SAY NAME2 @8
+COPY ~BG1Aerie/creatures/B2#Band1.cre~ ~override/B2#Band1.cre~
+COPY ~BG1Aerie/creatures/B2#Band2.cre~ ~override/B2#Band2.cre~
+COPY ~BG1Aerie/creatures/B2#Aeri2.cre~ ~override/B2#Aeri2.cre~
+  SAY NAME1 @4
+  SAY NAME2 @4
+  SAY BIO @5
+
+  SAY MORALE ~I tried my... m-my best, sir.~ [B2#Aeri7]
+  SAY HAPPY ~This is a lot more exciting than any circus.~ [B2#Aeriy]
+  SAY UNHAPPY_ANNOYED ~~ []
+  SAY UNHAPPY_SERIOUS ~~ []
+  SAY UNHAPPY_BREAKING_POINT ~~ [] 
+  SAY LEADER ~Y-you... you want me to lead? I... I-I'll try my best...~ [B2#Aerib]
+  SAY TIRED ~Ohh... my... my legs are just aching. I've never walked so much in my life. Can... c-can we rest now? Please?~ [B2#Aeric]
+  SAY BORED ~I didn't realize there'd be so much standing around.~ [B2#Aerid]
+  SAY BATTLE_CRY1 ~I... I won't let my friends be hurt!~ [B2#Aeria]
+  SAY BATTLE_CRY2 ~I'll hurt you if I have to!~ [B2#Aeri8]
+  SAY BATTLE_CRY3 ~~ []
+  SAY BATTLE_CRY4 ~~ []
+  SAY BATTLE_CRY5 ~~ []
+  SAY DAMAGE ~~ [B2#Aeril]
+  SAY DYING ~~ [B2#Aerim]
+  SAY HURT ~I... I need some healing. It... it hurts so much...~ [B2#Aerie]
+  SAY AREA_FOREST ~(sighs) I can't help but remember what the forests in the north look like from the sky. They're... they're so majestic.~ [B2#Aerin]
+  SAY AREA_CITY ~I... I never saw much of the cities from the circus. Are they all so crowded like this?~ [B2#Aerio]
+  SAY AREA_DUNGEON ~Oh... we have such stories amongst my people. Being underground is just not for the avariel.~ [B2#Aerip]
+  SAY AREA_DAY ~~ []
+  SAY AREA_NIGHT ~My... my mother used to tell me such stories about the terrible things that come out in the night. But... oh, you must think me foolish.~ [B2#Aerir]
+  SAY SELECT_COMMON1 ~Yes?~ [B2#Aerif]
+  SAY SELECT_COMMON2 ~I'll help however I can.~ [B2#Aerig]
+  SAY SELECT_COMMON3 ~What can I do?~ [B2#Aerih]
+  SAY SELECT_COMMON4 ~Hmm?~ [B2#Aerix]
+  SAY SELECT_COMMON5 ~You need something?~ [B2#Aeri0]
+  SAY SELECT_COMMON6 ~~ []
+  SAY SELECT_ACTION1 ~Faster than Chiktikka Fastpaws!~ [B2#Aerii]
+  SAY SELECT_ACTION2 ~I'll do it!~ [B2#Aerij]
+  SAY SELECT_ACTION3 ~In Baervan's name, it shall be done.~ [B2#Aerik]
+  SAY SELECT_ACTION4 ~Must I?~ [B2#Aeri_]
+  SAY SELECT_ACTION5 ~If... i-if you're sure.~ [B2#Aeriu]
+  SAY SELECT_ACTION6 ~~ [B2#Aeriv]
+  SAY SELECT_ACTION7 ~~ []
+  SAY CRITICAL_HIT ~Oh, my...~ [B2#Aeriz]
+  SAY CRITICAL_MISS ~~ [B2#Aeri1]
+  SAY TARGET_IMMUNE ~My weapon does nothing!~ [B2#Aeri2]
+  SAY INVENTORY_FULL ~No, I-I can't carry any more... ohh, I'm sorry. I dropped something...~ [B2#Aeri3]
+  SAY SELECT_RARE1 ~Alright.~ [B2#Aeris]
+  SAY SELECT_RARE2 ~I'll do my best.~ [B2#Aerit]
+  SAY SPELL_DISRUPTED ~~ []
+  SAY SET_A_TRAP ~~ []
+  SAY HIDDEN_IN_SHADOWS ~~ []
+  SAY PICKED_POCKET ~~ []
+
+COPY ~BG1Aerie/creatures/B2#KOBCM.cre~ ~override/B2#KOBCM.cre~
+COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
+  SAY NAME1 @4
+  SAY NAME2 @4
+  SAY BIO @5
+
+  SAY INITIAL_MEETING ~HELP ME! HELP ME, PLEEEAAASE!!~ [B2Aeri95]
+  SAY MORALE ~I tried my... m-my best, sir.~ [B2#Aeri7]
+  SAY HAPPY ~This is a lot more exciting than any circus.~ [B2#Aeriy]
+  SAY UNHAPPY_ANNOYED ~~ []
+  SAY UNHAPPY_SERIOUS ~~ []
+  SAY UNHAPPY_BREAKING_POINT ~~ [] 
+  SAY LEADER ~Y-you... you want me to lead? I... I-I'll try my best...~ [B2#Aerib]
+  SAY TIRED ~Ohh... my... my legs are just aching. I've never walked so much in my life. Can... c-can we rest now? Please?~ [B2#Aeric]
+  SAY BORED ~I didn't realize there'd be so much standing around.~ [B2#Aerid]
+  SAY BATTLE_CRY1 ~I... I won't let my friends be hurt!~ [B2#Aeria]
+  SAY BATTLE_CRY2 ~I'll hurt you if I have to!~ [B2#Aeri8]
+  SAY BATTLE_CRY3 ~~ []
+  SAY BATTLE_CRY4 ~~ []
+  SAY BATTLE_CRY5 ~~ []
+  SAY DAMAGE ~~ [B2#Aeril]
+  SAY DYING ~~ [B2#Aerim]
+  SAY HURT ~I... I need some healing. It... it hurts so much...~ [B2#Aerie]
+  SAY AREA_FOREST ~(sighs) I can't help but remember what the forests in the north look like from the sky. They're... they're so majestic.~ [B2#Aerin]
+  SAY AREA_CITY ~I... I never saw much of the cities from the circus. Are they all so crowded like this?~ [B2#Aerio]
+  SAY AREA_DUNGEON ~Oh... we have such stories amongst my people. Being underground is just not for the avariel.~ [B2#Aerip]
+  SAY AREA_DAY ~~ []
+  SAY AREA_NIGHT ~My... my mother used to tell me such stories about the terrible things that come out in the night. But... oh, you must think me foolish.~ [B2#Aerir]
+  SAY SELECT_COMMON1 ~Yes?~ [B2#Aerif]
+  SAY SELECT_COMMON2 ~I'll help however I can.~ [B2#Aerig]
+  SAY SELECT_COMMON3 ~What can I do?~ [B2#Aerih]
+  SAY SELECT_COMMON4 ~Hmm?~ [B2#Aerix]
+  SAY SELECT_COMMON5 ~You need something?~ [B2#Aeri0]
+  SAY SELECT_COMMON6 ~~ []
+  SAY SELECT_ACTION1 ~Faster than Chiktikka Fastpaws!~ [B2#Aerii]
+  SAY SELECT_ACTION2 ~I'll do it!~ [B2#Aerij]
+  SAY SELECT_ACTION3 ~In Baervan's name, it shall be done.~ [B2#Aerik]
+  SAY SELECT_ACTION4 ~Must I?~ [B2#Aeri_]
+  SAY SELECT_ACTION5 ~If... i-if you're sure.~ [B2#Aeriu]
+  SAY SELECT_ACTION6 ~~ [B2#Aeriv]
+  SAY SELECT_ACTION7 ~~ []
+  SAY CRITICAL_HIT ~Oh, my...~ [B2#Aeriz]
+  SAY CRITICAL_MISS ~~ [B2#Aeri1]
+  SAY TARGET_IMMUNE ~My weapon does nothing!~ [B2#Aeri2]
+  SAY INVENTORY_FULL ~No, I-I can't carry any more... ohh, I'm sorry. I dropped something...~ [B2#Aeri3]
+  SAY SELECT_RARE1 ~Alright.~ [B2#Aeris]
+  SAY SELECT_RARE2 ~I'll do my best.~ [B2#Aerit]
+  SAY SPELL_DISRUPTED ~~ []
+  SAY SET_A_TRAP ~~ []
+  SAY HIDDEN_IN_SHADOWS ~~ []
+  SAY PICKED_POCKET ~~ []
+
+// Appends
+APPEND ~pdialog.2da~ ~B2#Aeri B2#AeriP~
+  UNLESS ~B2#Aeri~

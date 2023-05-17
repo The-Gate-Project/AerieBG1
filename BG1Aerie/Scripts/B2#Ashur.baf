@@ -1,0 +1,7 @@
+IF
+  Global("B2#AeriAMB","GLOBAL",8)
+THEN
+  RESPONSE #100
+    Enemy()
+    Continue()
+END
