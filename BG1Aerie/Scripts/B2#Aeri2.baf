@@ -7,3 +7,10 @@ THEN
     SetGlobal("B2#AeriAMB","GLOBAL",9)
     StartDialogueNoSet([PC])
 END
+
+IF
+  GlobalGT("ENDOFBG1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

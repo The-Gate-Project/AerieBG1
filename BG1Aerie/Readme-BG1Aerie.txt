@@ -11,3 +11,9 @@ To install:
 Simply unrar to your game directory (For me its C:\Program Files (x86)\BeamDog\Games\00766\), and then double click the file ‘setup-BG1Aerie.exe’, and follow the instructions.
 
 To uninstall, just double click setup-TenyaThermidor.exe again.
+
+Version 1.2
+
+- Add french translation 
+- Add french audio
+- Traify tp2

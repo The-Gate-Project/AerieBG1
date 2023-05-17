@@ -1,22 +1,57 @@
 @0    = ~Anneau de protection d'Aerie~
-@1    = ~Aerie a créé cet anneau alors qu'elle étudiait la magie auprès de la sorcière Bentha. Il s'agit d'un anneau de protection ordinaire, sauf qu'il a été imprégné d'un charme qui protège son porteur de la magie néfaste..
+@1    = ~Aerie a créé cet anneau alors qu'elle étudiait la magie auprès de la sorcière Bentha. Il s'agit d'un anneau de protection ordinaire, sauf qu'il a été imprégné d'un charme qui protège son porteur de la magie néfaste.
 
-STATISTIQUES:
+PARAMÈTRES :
 
-Capacités équipées:
-Classe d'armure: +1
-Jets de sauvegarde: +1
-Résistance à la magie: +10%
+Capacités d'équipement :
+Classe d'armure : Bonus de 1
+Jets de sauvegarde : +1
+Résistance à la magie : +10%
 
 Poids: 0~
 @2    = ~Bottes de marche~
-@3    = ~Ces bottes sont faites pour marcher, et c'est exactement ce qu'elles font. Elles sont également grandes, ou du moins le seraient sur une personne plutôt mince ou menue..
+@3    = ~Ces bottes sont faites pour marcher, et c'est exactement ce qu'elles font. Elles sont également grandes, ou du moins le seraient sur une personne plutôt mince ou menue.
 
-STATISTIQUES:
+PARAMÈTRES :
 
 Poids: 4~
 @4    = ~Aerie~
-@5    = ~Lorsqu'on l'interroge sur son passé, Aerie reste silencieuse un moment, visiblement attristée par ce souvenir. Elle a vécu parmi les Avariel, les elfes ailés, et a été capturée par des esclavagistes alors qu'elle était encore très jeune. Elle frémit en évoquant ses premières années dans un cirque, exposée dans une cage qui restreignait ses mouvements au point que ses ailes se sont atrophiées. Elles se sont infectées... et Aerie peut à peine parler de la nuit où on l'a sortie de sa cage et où on lui a scié brutalement les ailes pour la maintenir en vie. Elle n'était plus utile au cirque et, sans la bonté de Quayle, elle serait sûrement morte. Il lui rendit la santé et lui donna une raison de continuer à vivre, et par respect pour sa générosité, elle apprit la dévotion du dieu gnome Baervan Ermitterant. Elle parle de Baervan avec affection, tout en continuant à rendre hommage à Aerdrie Faenya, et aborde la vie en dehors du cirque avec un mélange d'innocence et d'émerveillement mêlés à une détermination innée à lutter contre l'injustice.~
+@5    = ~Lorsque vous l'interrogez sur son passé, AERIE devient silencieuse, manifestement attristée par ses souvenirs. Elle a vécu parmi les avariels, les elfes ailés, et a été capturée par des marchands d'esclaves lorsqu'elle était encore toute petite. Elle tremble au souvenir de ses premières années dans le cirque, exhibée dans une cage si petite que ses ailes s'y sont atrophiées. Elles furent rapidement victimes d'une infection... Aerie peut à peine parler de cette nuit atroce où elle fut tirée de sa cage, ses ailes brutalement sciées pour la maintenir en vie. Elle n'était plus d'aucune utilité pour ce cirque, et sans la gentillesse de Quayle, elle y serait sûrement morte. Il lui a rendu à la fois la santé et une raison de vivre, et par respect pour sa générosité, elle s'est convertie au culte du dieu gnome Baervan Ermiterrant. Elle parle de Baervan avec affection, mais continue à honorer Aerdrie Faenya malgré tout. Elle affronte la vie en dehors du cirque avec un mélange d'innocence et d'émerveillement, et une volonté farouche de combattre l'injustice.~
 @6    = ~Ashur~
 @7    = ~Kyte~
 @8    = ~Tello~
+
+@5000 = ~Aerie dans BG: EE~
+@5001 = ~J'ai... j'ai fait de mon mieux, seigneur.~ [B2#Aeri7]
+@5002 = ~Tout cela est vraiment très amusant ! Beaucoup plus que le cirque !~ [B2#Aeriy]
+
+@5004 = ~Vous... vous voulez vraiment que je dirige ce groupe ? En êtes vous bien sûr ? Je... je ferai de mon mieux.~ [B2#Aerib] ~Vous... vous voulez vraiment que je dirige ce groupe ? En êtes vous bien sûre ? Je... je ferai de mon mieux.~ [B2#Aerib]
+@5005 = ~Ahhh, mes pauvres jambes... Ahh, il faut dire que je n'ai pas l'habitude de marcher. Pouvons-nous... pourrions-nous faire une pause maintenant, s'il vous plaît ?~ [B2#Aeric]
+@5006 = ~Et moi qui vous prenais pour des aventuriers. Je n'aurais pas cru qu'il faille attendre autant...~ [B2#Aerid]
+@5007 = ~Je... je ne vous laisserai pas faire de mal à mes amis !~ [B2#Aeria]
+@5008 = ~Attention ! Je sais être très méchante, vous savez. Je vous frapperai s'il le faut !~ [B2#Aeri8]
+@5009 = ~Aïe !~ [B2#Aeril]
+@5010 = ~Ooohhhhhh...~ [B2#Aerim]
+@5011 = ~Oh ! J'ai besoin de votre aide. Oh, que je souffre... Je perds tout mon sang !~ [B2#Aerie]
+@5012 = ~Ohh... Je ne peux m'empêcher de repenser aux forêts du nord. Elles étaient... magnifiques, vues d'en haut !~ [B2#Aerin]
+@5013 = ~Je n'ai jamais vraiment eu l'occasion de visiter une ville auparavant. Sont-elles toujours aussi grandes ?~ [B2#Aerio]
+@5014 = ~Oooh... Cela me rappelle une ancienne légende de mon peuple. Mais les avariels ne sauraient vivre sous terre.~ [B2#Aerip]
+@5015 = ~Ma... ma mère me racontait des histoires à propos des terribles créatures de la nuit. Mais... oh, vous devez me prendre pour une idiote.~ [B2#Aerir]
+@5016 = ~Oh... oui ?~ [B2#Aerif]
+@5017 = ~Je ferai tout mon possible.~ [B2#Aerig]
+@5018 = ~Que puis-je faire ?~ [B2#Aerih]
+@5019 = ~Mmm ?~ [B2#Aerix]
+@5020 = ~Vous... vous désirez ?~ [B2#Aeri0]
+@5021 = ~Plus rapide que Chiktikka Lestepattes.~ [B2#Aerii]
+@5022 = ~Hum ! Je le ferai.~ [B2#Aerij]
+@5023 = ~Au nom de Baervan, ce sera fait.~ [B2#Aerik]
+@5024 = ~Le faut-il vraiment ?~ [B2#Aeri_]
+@5025 = ~Si... si vous voulez.~ [B2#Aeriu]
+@5026 = ~*soupire*~ [B2#Aeriv]
+@5027 = ~Oh, désolée !~ [B2#Aeriz]
+@5028 = ~Oooh !~ [B2#Aeri1]
+@5029 = ~Mon arme n'a aucun effet !~ [B2#Aeri2]
+@5030 = ~Je ne peux rien transporter de plus. Je suis sincèrement navrée.~ [B2#Aeri3]
+@5031 = ~Très bien.~ [B2#Aeris]
+@5032 = ~Je ferai de mon mieux.~ [B2#Aerit]
+@5033 = ~AHH ! AU SECOURS ! AIDEZ-MOI, PAR PITIÉ !~ [B2Aeri95]

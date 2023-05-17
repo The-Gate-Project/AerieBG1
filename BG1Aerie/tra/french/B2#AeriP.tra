@@ -4,3 +4,13 @@
 @3    = ~Avez-vous besoin de mon aide ? Je serais heureux de voyager à nouveau avec vous.~
 @4    = ~Oui, rejoignez-nous.~
 @5    = ~Non, attendez ici encore un peu.~
+
+
+/*
+@0    = ~Tu... tu veux déjà que je parte ? Mais je peux encore t'être utile !~
+@1    = ~En fait, j'ai changé d'avis. Reste avec nous.~
+@2    = ~Je n'en doute pas mais... reste ici pour l'instant.~
+@3    = ~Est-ce que... tu as besoin de mon aide, alors ? Je serai heureuse de repartir avec toi.~
+@4    = ~Oui, rejoins-nous.~
+@5    = ~Non, attends ici encore un peu.~
+*/

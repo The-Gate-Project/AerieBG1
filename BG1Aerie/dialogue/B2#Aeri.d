@@ -232,7 +232,7 @@ IF ~Dead("ZORDRAL")
   = @54
   = @55
   IF ~~ THEN DO ~GiveItem("SCRLPET",LastTalkedToBy) SetGlobal("B2#BENTHASAFE","GLOBAL",1) 
-EscapeAreaMove("AR4906",318,205,3)
+EscapeAreaMove("%NashkelCarnival_ZordralsTent%",318,205,3)
 ~ EXIT
 END
 
