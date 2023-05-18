@@ -30,8 +30,14 @@ Follow the prompt
 v1.1: Initial release
 
 v1.2:
+
 - Add french translation by Spartan117
 - Add french audio
 - Traify tp2
 - EET compatibility (add cpmvars)
 - Up setup.exe
+- Traify missing string in B2#cAAM4.baf
+- Correct missing audio thanks to GraionDilach
+- Add InfinityAutoPackager thanks to AL|EN
+- Add REQUIRE_PREDICATE GAME_IS bgee eet
+- Add Metadata for project Infinity and label

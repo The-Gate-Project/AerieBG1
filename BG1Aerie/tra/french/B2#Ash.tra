@@ -1,4 +1,4 @@
-@0    = ~Nous avons entendu parler de types malveillants opérant par ici. Restez vigilants, citoyens.~
+@0    = ~Nous avons entendu dire que des types malveillants opéraient par ici. Restez vigilants, citoyens.~
 
 @1    = ~J'ai essayé de vous prévenir.~
 
@@ -8,72 +8,72 @@
 
 @4    = ~*chantant à tue-tête*
 '... lui dire,
-Tandis qu'il erre dans sa mer étoilée,
-Souvenez-vous... souvenez-vous...'~
+Tandis qu'il erre dans sa mer parsemée d'étoiles,
+Souviens-toi... Souviens-toi...'~ // Star Trek Thème
 
-@5    = ~Huh?~
+@5    = ~Huh ?~
 
-@6    = ~<CHARNAME>? Que... que se passe-t-il ?~
+@6    = ~<CHARNAME> ? Que... que se passe-t-il ?~
 
-@7    = ~Il vaut mieux que tu t'en ailles et que tu oublies ce que tu as vu.~
+@7    = ~Vous feriez mieux de dégager et d'oublier ce que vous avez vu.~
 
 @8    = ~M-mais...~
 
-@9    = ~Êtes-vous sourd et muet ? J'ai dit : "Partez !~
+@9    = ~Êtes-vous sourde ou idiote ? J'ai dit : « Partez ! »~
 
 @10   = ~Je-Je-Je... *gulps*~
 
 @11   = ~Non.~
 
-@12   = ~Excuse moi?~
+@12   = ~Pardon ?~
 
-@13   = ~Je ne sais pas qui vous êtes, ni ce que vous faites, mais je ne le permettrai pas ici !~
+@13   = ~Je ne sais pas qui vous êtes, ni quelles sont vos intentions, mais je ne vous laisserais pas faire !~
 
-@14   = ~Je pense que vous devriez partir.~
+@14   = ~Je pense que c'est vous qui devriez partir.~
 
-@15   = ~Ou quoi?~
+@15   = ~Ou quoi ?~
 
 @16   = ~Je... Je n'ai pas encore réfléchi à ce sujet...~
 
-@17   = ~Vous voulez les rejoindre ? Très bien. Attrapez-la !~
+@17   = ~Vous voulez partager leur sort ? Très bien. Attrapez-la !~
 
-@18   = ~Je suppose que je t'ai sous-estimée, ma fille. Mais je te promets que personne ne fera plus jamais cette erreur...~
+@18   = ~Il semble que je t'ai sous-estimée, petite fille. Mais je te promets que personne ne fera plus jamais cette erreur...~
 
 @19   = ~*tousse*~
 
-@20   = ~Aerie! Est-ce que ça va ?~
+@20   = ~Aerie ! Est-ce que ça va ?~
 
 @21   = ~Je... ça... ça fait mal...~
 
-@22   = ~Mais, c'est bon. Je peux me soigner...~
+@22   = ~Mais, ça va aller. Je peux me soigner...~
 
-@23   = ~Est-ce que ça va ?, <CHARNAME>?~
+@23   = ~Est-ce que tout va bien, <CHARNAME> ?~
 
-@24   = ~Merci à vous.~
+@24   = ~Grace à vous.~
 
 @25   = ~Vous savez, j'allais m'en occuper moi-même...~
 
-@26   = ~Vous... vous n'avez pas à me remercier. Je ne pouvais pas les laisser faire. D'ailleurs, vous m'avez déjà beaucoup aidé.~
+@26   = ~Vous... vous n'avez pas à me remercier. Je ne pouvais pas les laisser faire et d'ailleurs, vous m'avez beaucoup aidé.~
 
 @27   = ~Vous avez fait preuve de courage.~
 
 @28   = ~Oh. Bien sûr, <CHARNAME>. Mais j'ai pensée vous donner un coup de main quand même, puisque vous m'avez aidée. C'était peut-être idiot... Je...~
 
-@29   = ~Peut-être... mais je pense que j'ai eu un peu de chance. Je ne me suis jamais vraiment testée au combat avant...~
+@29   = ~Peut-être... mais je pense que j'ai eu de la chance. Je n'avais encore jamais participé à un combat...~
 
-@30   = ~J'ai eu très peur ! Mais je me suis aussi sentie... alerte, excitée... peut-être tout simplement vivante, pour la première fois depuis longtemps. Est-ce étrange ?~
+@30   = ~J'ai eu très peur ! Mais je me sentais également... exaltée, presque fougueuse...... ou peut-être tout simplement vivante, pour la première fois depuis longtemps. Est-ce étrange ?~
 
-@31   = ~Les batailles exacerbent vos sens. Cela peut être une véritable ruée. Certaines personnes en deviennent même dépendantes.~
+@31   = ~Les batailles exacerbent vos sens. Cela peut être vraiment très intense. Certaines personnes en deviennent même dépendantes.~
 
-@32   = ~C'est tout simplement stupide.~
+@32   = ~C'est complètement stupide.~
 
-@33   = ~Je comprends pourquoi. Même en sachant que votre vie est en danger, il y a un certain frisson. Peut-être est-ce parce que vous êtes en danger...~
+@33   = ~Je comprends pourquoi. Même en sachant que votre vie est en danger, il y a ce frisson... C'est probablement à cause du danger justement...~
 
 @34   = ~Je suppose que vous avez raison, <CHARNAME>. Vous avez beaucoup plus d'expérience que moi.~
 
-@35   = ~Mais tant que nous allons bien tous les deux, tout se passera bien.~
+@35   = ~Mais tant que nous allons bien tous les deux, on peut dire que tout c'est bien passé.~ ~Mais tant que nous allons bien toutes les deux, on peut dire que tout c'est bien passé.~
 
-@36   = ~Si... si vous ou l'un de vos amis avez encore besoin d'être rafistolé, n'hésitez pas à passer me voir. J... J'aime bien quand vous le faites.~
+@36   = ~Si... si vous ou l'un de vos amis avez encore besoin d'être rafistolé, n'hésitez pas à passer me voir. J... J'aime bien quand vous me rendez visite.~
 
 @37   = ~Au revoir.~
 

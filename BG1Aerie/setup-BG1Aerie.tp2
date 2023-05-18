@@ -2,6 +2,7 @@
 // Basics
 BACKUP ~BG1Aerie/backup~
 AUTHOR ~Coutelier (mail@coutelier.org.uk)~
+VERSION ~1.2~
 
 // --------------------------------------------
 // BG1 Aerie Mod v1.1
@@ -33,6 +34,8 @@ LANGUAGE
 
 // Component setup
 BEGIN @5000 /* Aerie for BG:EE */
+LABEL ~AerieBG1~
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @6000
 
 // Audio
 

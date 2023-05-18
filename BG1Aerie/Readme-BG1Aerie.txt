@@ -19,3 +19,8 @@ Version 1.2
 - Traify tp2 and moved in main folder
 - EET compatibility (add cpmvars)
 - Up setup.exe
+- Traify missing string in B2#cAAM4.baf
+- Correct missing audio thanks to GraionDilach
+- Add InfinityAutoPackager thanks to AL|EN
+- Add REQUIRE_PREDICATE GAME_IS bgee eet
+- Add Metadata for project Infinity
