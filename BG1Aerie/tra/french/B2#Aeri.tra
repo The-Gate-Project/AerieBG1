@@ -18,22 +18,20 @@
 @17   = ~Nous nous pencherons sur la question si nous en avons le temps.~
 @18   = ~Vous... vous allez m'aider ?  Oh, merci ! C'est par ici, suivez-moi.~
 @19   = ~Je ne sais pas de combien de temps il lui reste, ni si je suis capable d'affronter Zordral seule... et avec la vie de Bentha en jeu aussi... ohh !~
-
-
-@20   = ~Vous n'avez pas pu la sauver ? ! Je... non, je... Je suis désolée.  Je sais que vous avez dû faire de votre mieux.  C'est juste que... elle était l'une des rares amies que j'avais ici. S'il vous plaît, je... Je veux être seule...~
-@21   = ~Oh... Bonjour, <CHARNAME>. Bentha est rentrée chez elle pour se reposer après son épreuve, alors je surveille sa tente. C'est un changement agréable par rapport à mes tâches habituelles. Elle a tant de livres et de parchemins à m'offrir pour que je m'en imprègne et que j'apprenne.~
-@22   = ~J'ai dit qu'elle m'enseignait, n'est-ce pas ? Je pratique aussi bien la magie arcanique que la magie divine, alors si vous avez besoin de soins ou d'aide pour identifier des objets, je serai plus qu'heureuse de vous aider ! J'ai acquis une certaine compétence. Je veux dire, il y a eu une fois où des lapins ont commencé à exploser quand on les caressait, mais j'ai... J'ai compris ce que j'avais fait de mal. Honnêtement... heh...~
-@23   = ~L'oncle Quayle a également laissé ici quelques objets qu'il a collectés au cours de ses aventures. Nous sommes censés faire le vide bientôt. Je n'ai pas le droit de les donner, mais vous pouvez en acheter si vous le souhaitez.~
+@20   = ~Comment ça vous n'avez pas pu la sauver ?! Je... non, je... Je suis désolée. Je sais que vous avez dû faire de votre mieux.  C'est juste que... elle était l'une des rares amies que j'avais ici. S'il vous plaît, je... Je voudrais être seule...~
+@21   = ~Oh... Bonjour, <CHARNAME>. Bentha est rentrée chez elle pour se reposer après cette épreuve, alors je surveille sa tente. C'est un changement agréable par rapport à mes tâches habituelles. Elle a tant de livres et de parchemins, je peux prendre le temps de les étudier et les apprendre.~
+@22   = ~Je vous ai dit qu'elle m'enseignait, n'est-ce pas ? Je pratique aussi bien la magie arcanique que la magie divine, alors si vous avez besoin de soins ou d'un coup de main pour identifier des objets, je serai plus qu'heureuse de vous aider ! J'ai acquis pas mal d’expériences. Je sais bien qu'il y a eu cette fois où des lapins ont commencé à exploser à la moindre caresse, mais j'ai... J'ai appris de mes erreurs. Promis... hé hé...~
+@23   = ~Mon oncle Quayle a également laissé quelques objets qu'il a collectés au cours de ses aventures. Nous sommes censés écouler notre stock au plus vite. Je n'ai pas le droit de les offrir, mais vous pouvez en acheter si vous le souhaitez.~
 @24   = ~Parlez-nous de vous, Aerie.~
-@25   = ~Oncle Quayle?~
+@25   = ~Oncle Quayle ?~
 @26   = ~Il se passe quelque chose par ici ?~
 @27   = ~Montrez-nous ce que vous avez.~
-@28   = ~Moi ? Il n'y a pas grand-chose à dire, en fait. Je suis sûr que ma vie n'est pas aussi passionnante que la vôtre. Je me contente de voyager avec le cirque, d'aider ici et là et de regarder le monde passer.  (Un jour, j'espère partir d'ici et trouver ma place là-bas.  Mais pour l'instant, je dois attendre le retour de mon oncle.~
+@28   = ~Moi ? Il n'y a pas grand-chose à dire, en fait. Je suis sûr que ma vie est loin d'être aussi passionnante que la vôtre. Je me contente de voyager avec le cirque, d'aider ici et là et de regarder les autres vivre leur vie. (soupire) Un jour, j'espère partir d'ici et trouver ma place en ce monde. Mais pour l'instant, je dois attendre le retour de mon oncle.~
 @29   = ~Que faites-vous de votre temps libre ?~
-@30   = ~Pourquoi êtes-vous si nerveuse. Ne le prenez pas mal, mais... quelqu'un qui bégaie autant devrait-il pratiquer la magie ? ?~
+@30   = ~Pourquoi êtes-vous si nerveuse ?~
 @31   = ~Ne le prenez pas mal, mais... quelqu'un qui bégaie autant devrait-il pratiquer la magie ?~
 @32   = ~Mais comment vous êtes-vous retrouvée ici ?~
-@33   = ~J'étudie la magie. Quayle m'enseigne généralement, et Bentha parfois quand il n'est pas là. Quand je ne suis pas en train de faire ça ou une autre corvée, je vais généralement dans mon wagon pour lire. D'autres ici ont des livres qu'ils me laissent parfois emprunter. J'aime lire sur d'autres contrées... sur tous les peuples qui y vivent, sur la magie et la technologie étranges, sur les trésors et les secrets perdus depuis des siècles... (soupirs).  Je rêve qu'un jour, je pourrai voyager dans ces endroits et utiliser les pouvoirs et les compétences que j'ai appris pour aider les gens de façon concrète.~
+@33   = ~J'étudie la magie. Quayle m'enseigne la plupart du temps, et Bentha prend le relais quand il n'est pas là. Quand je ne suis pas en train d’étudier ou de m'occuper de mes corvées, je restes généralement dans mon wagon pour lire. Les autres membres du cirque ont des livres que je peux emprunter à l'occasion. J'aime lire sur d'autres contrées... sur tous les peuples qui y vivent, sur la magie et la technologie étranges, sur les trésors et les secrets perdus depuis des siècles... (soupirs).  Je rêve qu'un jour, je pourrai voyager dans ces endroits et utiliser les pouvoirs et les compétences que j'ai appris pour aider les gens de façon concrète.~
 @34   = ~N-nerveuse ? Je ne le suis pas... n'est-ce pas ?  Je suis désolée. Je n'ai pas l'habitude d'avoir des invités.~
 @35   = ~Oh, un sort, ce n'est pas comme parler à une personne. Je n'ai pas à craindre que la magie se mette en colère contre moi parce que j'ai dit ou fait quelque chose de mal sans le savoir. Enfin... pas en général, en tout cas... heh...~
 @36   = ~Je suis désolée, <CHARNAME>. Je suis sûr que vous êtes gentil, et je vous suis vraiment reconnaissant de nous avoir aidés, Bentha et moi, mais... ce n'est pas quelque chose dont je suis à l'aise pour parler maintenant.~
