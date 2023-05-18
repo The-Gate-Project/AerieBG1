@@ -1,7 +1,7 @@
 // --------------------------------------------
 // Basics
 BACKUP ~BG1Aerie/backup~
-AUTHOR ~Coutelier (mail@coutelier.org.uk)~
+AUTHOR ~Coutelier (https://forums.beamdog.com/discussion/38824/aerie-in-bg-ee-v1-1/p1)~
 VERSION ~1.2~
 
 // --------------------------------------------
@@ -34,7 +34,7 @@ LANGUAGE
 
 // Component setup
 BEGIN @5000 /* Aerie for BG:EE */
-LABEL ~AerieBG1~
+LABEL ~Coutelier-AerieBG1~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @6000
 
 // Audio
