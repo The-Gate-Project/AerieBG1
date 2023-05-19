@@ -34,12 +34,19 @@ LANGUAGE
 
 // Component setup
 BEGIN @5000 /* Aerie for BG:EE */
+DESIGNATED 5000
 LABEL ~Coutelier-AerieBG1~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @6000
 
 // Audio
 
-COPY ~BG1Aerie/audio/%LANGUAGE%~ ~override~
+ACTION_IF DIRECTORY_EXISTS ~BG1Aerie/tra/%LANGUAGE%/audio~ THEN BEGIN
+ COPY ~BG1Aerie/tra/%LANGUAGE%/audio~ ~override~ 
+END		
+
+ELSE BEGIN
+ COPY ~BG1Aerie/tra/english/audio~ ~override~ 
+END
 
 // Compiling dialogue...
 COMPILE EVALUATE_BUFFER ~BG1Aerie/dialogue/B2#Aeri.d~
