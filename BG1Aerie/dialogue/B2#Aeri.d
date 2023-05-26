@@ -395,15 +395,15 @@ END
 // INTERJECTIONS
 
 INTERJECT B2#Aeri 1 B2#ImnAeri
-  == IMOEN2 IF ~IsValidForPartyDialog("IMOEN")~ THEN 
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialog("%IMOEN_DV%")~ THEN 
     @112
-  == B2#Aeri IF ~IsValidForPartyDialog("IMOEN")~ THEN
+  == B2#Aeri IF ~IsValidForPartyDialog("%IMOEN_DV%")~ THEN
     @113
-  == IMOEN2 @114
+  == %IMOEN_JOINED% @114
   == B2#Aeri @115
-  == IMOEN2 @116
+  == %IMOEN_JOINED% @116
   == B2#Aeri @117
-  == IMOEN2 @118
+  == %IMOEN_JOINED% @118
   = @119
   == B2#Aeri @120
 END B2#Aeri 3
