@@ -23,3 +23,4 @@ Version 1.2
 - Add InfinityAutoPackager thanks to AL|EN
 - Add REQUIRE_PREDICATE GAME_IS bgee eet
 - Add metadata and label for Project Infinity
+- Correct B2#Aeri.d Imoen dialogue for EET thanks to Jastey and Camdawg
