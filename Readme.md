@@ -1,4 +1,4 @@
-# Aerie for BG:EE 
+# Aerie for BG:EE / EET
 
 ![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20french%20%7C%20russian%20%7C%20&color=informational)
 
@@ -29,7 +29,7 @@ Follow the prompt
 
 v1.1: Initial release
 
-v1.2:
+v2.0:
 
 - Add French translation by Spartan117
 - Add french audio
@@ -40,4 +40,5 @@ v1.2:
 - Add InfinityAutoPackager thanks to AL|EN
 - Add REQUIRE_PREDICATE GAME_IS bgee eet
 - Add metadata and label for Project Infinity
+- Correct B2#Aeri.d Imoen dialogue for EET
 
