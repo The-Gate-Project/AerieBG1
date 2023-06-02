@@ -207,5 +207,5 @@ COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
   WRITE_LONG PICKED_POCKET (BNOT 0x0)
 
 // Appends
-APPEND ~pdialog.2da~ ~B2#Aeri B2#AeriP~
+APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****  	****  	****  	****  	****~
   UNLESS ~B2#Aeri~
