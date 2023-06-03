@@ -36,3 +36,6 @@ Thanks to GraionDilach
 - Fix BGEE audio slot misassignment.
 - Use the original BG2 portrait as default and separate out the mod-included lighter portrait variant to a component. (Previous setup also affected her portrait in BG2.)
 - Polishing
+
+Version 2.3
+- Fix blurry portraits caused by using the wrong portrait sizes
