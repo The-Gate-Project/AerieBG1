@@ -28,7 +28,7 @@ LANGUAGE
          ~english~
          ~BG1Aerie/tra/english/B1Asetup.tra~
 LANGUAGE 		 
-		 ~Russian (Alisia & Arcanecoast.ru)~
+         ~Russian (Alisia & Arcanecoast.ru)~
          ~russian~
          ~BG1Aerie/tra/russian/B1Asetup.tra~
 LANGUAGE 
@@ -41,6 +41,33 @@ BEGIN @5000 /* Aerie for BG:EE */
 DESIGNATED 5000
 LABEL ~Coutelier-AerieBG1~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @6000
+
+// Update CRE audio references for EET compatibility
+
+DEFINE_PATCH_MACRO patch_eet_audio BEGIN
+  PATCH_IF (GAME_IS ~eet~) BEGIN
+    // add 200000 as per EET BG1 TLK references
+    FOR (n = 0; n < 100; ++n) BEGIN
+      READ_LONG 0xA4 + n*4 temp_str
+      PATCH_IF (temp_str > 0) BEGIN
+        WRITE_LONG 0xA4 + n*4 (200000 + temp_str)
+      END
+    END
+    // move the nine-click RARE_SELECT audio to the BG2EE slots
+    READ_LONG SELECT_ACTION4 rareselect1
+    READ_LONG SELECT_ACTION5 rareselect2
+    READ_LONG SELECT_ACTION6 rareselect3
+    READ_LONG SELECT_ACTION7 rareselect4
+    WRITE_LONG SELECT_ACTION4 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION5 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION6 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION7 (BNOT 0x0)
+    WRITE_LONG 0x1D0 rareselect1 /* BG2EE_SELECT_RARE1 */
+    WRITE_LONG 0x1D4 rareselect2 /* BG2EE_SELECT_RARE2 */
+    WRITE_LONG 0x1D8 rareselect3 /* BG2EE_SELECT_RARE3 */
+    WRITE_LONG 0x1DC rareselect4 /* BG2EE_SELECT_RARE4 */
+  END
+END
 
 // Audio
 
@@ -94,16 +121,21 @@ COPY ~BG1Aerie/items/B2#BTSA.itm~ ~override~
 
 // Creatures
 COPY ~BG1Aerie/creatures/B2#Ashur.cre~ ~override/B2#Ashur.cre~
+  LPM patch_eet_audio
   SAY NAME1 @6
   SAY NAME2 @6
 COPY ~BG1Aerie/creatures/B2#Kyte.cre~ ~override/B2#Kyte.cre~
+  LPM patch_eet_audio
   SAY NAME1 @7
   SAY NAME2 @7
 COPY ~BG1Aerie/creatures/B2#Tello.cre~ ~override/B2#Tello.cre~
+  LPM patch_eet_audio
   SAY NAME1 @8
   SAY NAME2 @8
 COPY ~BG1Aerie/creatures/B2#Band1.cre~ ~override/B2#Band1.cre~
+  LPM patch_eet_audio
 COPY ~BG1Aerie/creatures/B2#Band2.cre~ ~override/B2#Band2.cre~
+  LPM patch_eet_audio
 COPY ~BG1Aerie/creatures/B2#Aeri2.cre~ ~override/B2#Aeri2.cre~
   SAY NAME1 @4
   SAY NAME2 @4
@@ -165,6 +197,7 @@ COPY ~BG1Aerie/creatures/B2#Aeri2.cre~ ~override/B2#Aeri2.cre~
   END
 
 COPY ~BG1Aerie/creatures/B2#KOBCM.cre~ ~override/B2#KOBCM.cre~
+  LPM patch_eet_audio
 COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
   SAY NAME1 @4
   SAY NAME2 @4
