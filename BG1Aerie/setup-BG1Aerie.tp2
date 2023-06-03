@@ -28,7 +28,7 @@ LANGUAGE
          ~english~
          ~BG1Aerie/tra/english/B1Asetup.tra~
 LANGUAGE 		 
-		 ~Russian (Alisia & Arcanecoast.ru)~
+         ~Russian (Alisia & Arcanecoast.ru)~
          ~russian~
          ~BG1Aerie/tra/russian/B1Asetup.tra~
 LANGUAGE 
@@ -41,6 +41,33 @@ BEGIN @5000 /* Aerie for BG:EE */
 DESIGNATED 5000
 LABEL ~Coutelier-AerieBG1~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @6000
+
+// Update CRE audio references for EET compatibility
+
+DEFINE_PATCH_MACRO patch_eet_audio BEGIN
+  PATCH_IF (GAME_IS ~eet~) BEGIN
+    // add 200000 as per EET BG1 TLK references
+    FOR (n = 0; n < 100; ++n) BEGIN
+      READ_LONG 0xA4 + n*4 temp_str
+      PATCH_IF (temp_str > 0) BEGIN
+        WRITE_LONG 0xA4 + n*4 (200000 + temp_str)
+      END
+    END
+    // move the nine-click RARE_SELECT audio to the BG2EE slots
+    READ_LONG SELECT_ACTION4 rareselect1
+    READ_LONG SELECT_ACTION5 rareselect2
+    READ_LONG SELECT_ACTION6 rareselect3
+    READ_LONG SELECT_ACTION7 rareselect4
+    WRITE_LONG SELECT_ACTION4 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION5 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION6 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION7 (BNOT 0x0)
+    WRITE_LONG 0x1D0 rareselect1 /* BG2EE_SELECT_RARE1 */
+    WRITE_LONG 0x1D4 rareselect2 /* BG2EE_SELECT_RARE2 */
+    WRITE_LONG 0x1D8 rareselect3 /* BG2EE_SELECT_RARE3 */
+    WRITE_LONG 0x1DC rareselect4 /* BG2EE_SELECT_RARE4 */
+  END
+END
 
 // Audio
 
@@ -78,7 +105,11 @@ COMPILE ~BG1Aerie/Scripts/B2#cAAM5.baf~
 
 // Copying files
 COPY ~BG1Aerie/shop~ ~override~
-COPY ~BG1Aerie/portraits~ ~override~
+
+// Install the vanilla portrait if it's missing from the game
+ACTION_IF (NOT FILE_EXISTS_IN_GAME ~NAERIEL.BMP~) BEGIN
+  COPY ~BG1Aerie/portraitsBGEE~ ~override~
+END
 
 // Items
 COPY ~BG1Aerie/items/B2#RNG1.itm~ ~override~
@@ -94,16 +125,21 @@ COPY ~BG1Aerie/items/B2#BTSA.itm~ ~override~
 
 // Creatures
 COPY ~BG1Aerie/creatures/B2#Ashur.cre~ ~override/B2#Ashur.cre~
+  LPM patch_eet_audio
   SAY NAME1 @6
   SAY NAME2 @6
 COPY ~BG1Aerie/creatures/B2#Kyte.cre~ ~override/B2#Kyte.cre~
+  LPM patch_eet_audio
   SAY NAME1 @7
   SAY NAME2 @7
 COPY ~BG1Aerie/creatures/B2#Tello.cre~ ~override/B2#Tello.cre~
+  LPM patch_eet_audio
   SAY NAME1 @8
   SAY NAME2 @8
 COPY ~BG1Aerie/creatures/B2#Band1.cre~ ~override/B2#Band1.cre~
+  LPM patch_eet_audio
 COPY ~BG1Aerie/creatures/B2#Band2.cre~ ~override/B2#Band2.cre~
+  LPM patch_eet_audio
 COPY ~BG1Aerie/creatures/B2#Aeri2.cre~ ~override/B2#Aeri2.cre~
   SAY NAME1 @4
   SAY NAME2 @4
@@ -139,10 +175,7 @@ COPY ~BG1Aerie/creatures/B2#Aeri2.cre~ ~override/B2#Aeri2.cre~
   SAY SELECT_ACTION1 @5021 /* Faster than Chiktikka Fastpaws! */
   SAY SELECT_ACTION2 @5022 /* I'll do it! */
   SAY SELECT_ACTION3 @5023 /* In Baervan's name, it shall be done. */
-  SAY SELECT_ACTION4 @5024 /* Must I? */
-  SAY SELECT_ACTION5 @5025 /* If... i-if you're sure. */
-  SAY SELECT_ACTION6 @5026 /*  */
-  WRITE_LONG SELECT_ACTION7 (BNOT 0x0)
+  WRITE_LONG SELECT_ACTION7 (BNOT 0x0) /* empty, doesn't need special treatment, see below */
   SAY CRITICAL_HIT @5027 /* Oh, my... */
   SAY CRITICAL_MISS @5028 /*  */
   SAY TARGET_IMMUNE @5029 /* My weapon does nothing! */
@@ -153,8 +186,22 @@ COPY ~BG1Aerie/creatures/B2#Aeri2.cre~ ~override/B2#Aeri2.cre~
   WRITE_LONG SET_A_TRAP (BNOT 0x0)
   WRITE_LONG HIDDEN_IN_SHADOWS (BNOT 0x0)
   WRITE_LONG PICKED_POCKET (BNOT 0x0)
+  // SELECT_ACTION4-7 needs special treatment, they are the 4-click funny response slots on BGEE and only action response slots on BG2EE
+  PATCH_IF (GAME_IS ~eet~) BEGIN
+    SAY SELECT_ACTION4 @5024 /* Must I? */
+    SAY SELECT_ACTION5 @5025 /* If... i-if you're sure. */
+    SAY SELECT_ACTION6 @5026 /*  */
+  END ELSE BEGIN
+    WRITE_LONG SELECT_ACTION4 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION5 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION6 (BNOT 0x0)
+    SAY 0x1E0 @5024			/* Must I? */	/* SAY BGEE_ACTION4 */
+    SAY 0x1E4 @5025			/* If... i-if you're sure. */		/* SAY BGEE_ACTION5 */
+    SAY 0x1E8 @5026			/*  */				/* SAY BGEE_ACTION6 */
+  END
 
 COPY ~BG1Aerie/creatures/B2#KOBCM.cre~ ~override/B2#KOBCM.cre~
+  LPM patch_eet_audio
 COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
   SAY NAME1 @4
   SAY NAME2 @4
@@ -191,10 +238,7 @@ COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
   SAY SELECT_ACTION1 @5021 /* Faster than Chiktikka Fastpaws! */
   SAY SELECT_ACTION2 @5022 /* I'll do it! */
   SAY SELECT_ACTION3 @5023 /* In Baervan's name, it shall be done. */
-  SAY SELECT_ACTION4 @5024 /* Must I? */
-  SAY SELECT_ACTION5 @5025 /* If... i-if you're sure. */
-  SAY SELECT_ACTION6 @5026 /*  */
-  WRITE_LONG SELECT_ACTION7 (BNOT 0x0)
+  WRITE_LONG SELECT_ACTION7 (BNOT 0x0) /* empty, doesn't need special treatment, see below */
   SAY CRITICAL_HIT @5027 /* Oh, my... */
   SAY CRITICAL_MISS @5028 /*  */
   SAY TARGET_IMMUNE @5029 /* My weapon does nothing! */
@@ -205,7 +249,32 @@ COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
   WRITE_LONG SET_A_TRAP (BNOT 0x0)
   WRITE_LONG HIDDEN_IN_SHADOWS (BNOT 0x0)
   WRITE_LONG PICKED_POCKET (BNOT 0x0)
+  // SELECT_ACTION4-7 needs special treatment, they are the 4-click funny response slots on BGEE and only action response slots on BG2EE
+  PATCH_IF (GAME_IS ~eet~) BEGIN
+    SAY SELECT_ACTION4 @5024 /* Must I? */
+    SAY SELECT_ACTION5 @5025 /* If... i-if you're sure. */
+    SAY SELECT_ACTION6 @5026 /*  */
+  END ELSE BEGIN
+    WRITE_LONG SELECT_ACTION4 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION5 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION6 (BNOT 0x0)
+    SAY 0x1E0 @5024			/* Must I? */	/* SAY BGEE_ACTION4 */
+    SAY 0x1E4 @5025			/* If... i-if you're sure. */		/* SAY BGEE_ACTION5 */
+    SAY 0x1E8 @5026			/*  */				/* SAY BGEE_ACTION6 */
+  END
 
 // Appends
-APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****  	****  	****  	****  	****~
-  UNLESS ~B2#Aeri~
+ACTION_IF (GAME_IS ~eet~) BEGIN
+  APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****  	****  	****  	****  	****~
+    UNLESS ~B2#Aeri~
+END ELSE BEGIN
+  APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****~
+    UNLESS ~B2#Aeri~
+END
+
+BEGIN @6002 /* Install lighter portrait */
+DESIGNATED 5001
+LABEL ~Coutelier-AerieBG1-Lighter-Portrait~
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @6000
+
+COPY ~BG1Aerie/portraits~ ~override~
