@@ -8,7 +8,7 @@ If you already know her from BG2, then you already know where you're most likely
 
 To install:
 
-Simply unrar to your game directory (For me its C:\Program Files (x86)\BeamDog\Games\00766\), and then double click the file �setup-BG1Aerie.exe�, and follow the instructions.
+Simply unrar to your game directory (For me its C:\Program Files (x86)\BeamDog\Games\00766\), and then double click the file  setup-BG1Aerie.exe , and follow the instructions.
 
 To uninstall, just double click setup-BG1Aerie.exe again.
 
@@ -29,7 +29,10 @@ Version 2.1
 
 - Further EET compatibility fixes, thanks to argent77 pointing out the issue.
 
-Version NEXT_VERSION
+Version 2.2 
+
+Thanks to GraionDilach
 
 - Fix BGEE audio slot misassignment.
 - Use the original BG2 portrait as default and separate out the mod-included lighter portrait variant to a component. (Previous setup also affected her portrait in BG2.)
+- Polishing

@@ -46,3 +46,11 @@ v2.1:
 
 - Add missing columns to PDIALOG.2DA for EET, thanks to Argent77
 
+Version 2.2 
+
+Thanks to GraionDilach
+
+- Fix BGEE audio slot misassignment.
+- Use the original BG2 portrait as default and separate out the mod-included lighter portrait variant to a component. (Previous setup also affected her portrait in BG2.)
+- Polishing
+
