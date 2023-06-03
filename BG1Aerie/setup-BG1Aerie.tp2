@@ -105,7 +105,11 @@ COMPILE ~BG1Aerie/Scripts/B2#cAAM5.baf~
 
 // Copying files
 COPY ~BG1Aerie/shop~ ~override~
-COPY ~BG1Aerie/portraits~ ~override~
+
+// Install the vanilla portraiit if it's missing from the game
+ACTION_IF (NOT FILE_EXISTS_IN_GAME ~NAERIEL.BMP~) BEGIN
+  COPY ~BG1Aerie/portraitsBGEE~ ~override~
+END
 
 // Items
 COPY ~BG1Aerie/items/B2#RNG1.itm~ ~override~
@@ -262,3 +266,10 @@ COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
 // Appends
 APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****  	****  	****  	****  	****~
   UNLESS ~B2#Aeri~
+
+BEGIN @6002 /* Install lighter portrait */
+DESIGNATED 5001
+LABEL ~Coutelier-AerieBG1-Lighter-Portrait~
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @6000
+
+COPY ~BG1Aerie/portraits~ ~override~
