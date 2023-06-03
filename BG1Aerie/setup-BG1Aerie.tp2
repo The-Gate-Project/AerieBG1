@@ -139,10 +139,7 @@ COPY ~BG1Aerie/creatures/B2#Aeri2.cre~ ~override/B2#Aeri2.cre~
   SAY SELECT_ACTION1 @5021 /* Faster than Chiktikka Fastpaws! */
   SAY SELECT_ACTION2 @5022 /* I'll do it! */
   SAY SELECT_ACTION3 @5023 /* In Baervan's name, it shall be done. */
-  SAY SELECT_ACTION4 @5024 /* Must I? */
-  SAY SELECT_ACTION5 @5025 /* If... i-if you're sure. */
-  SAY SELECT_ACTION6 @5026 /*  */
-  WRITE_LONG SELECT_ACTION7 (BNOT 0x0)
+  WRITE_LONG SELECT_ACTION7 (BNOT 0x0) /* empty, doesn't need special treatment, see below */
   SAY CRITICAL_HIT @5027 /* Oh, my... */
   SAY CRITICAL_MISS @5028 /*  */
   SAY TARGET_IMMUNE @5029 /* My weapon does nothing! */
@@ -153,6 +150,19 @@ COPY ~BG1Aerie/creatures/B2#Aeri2.cre~ ~override/B2#Aeri2.cre~
   WRITE_LONG SET_A_TRAP (BNOT 0x0)
   WRITE_LONG HIDDEN_IN_SHADOWS (BNOT 0x0)
   WRITE_LONG PICKED_POCKET (BNOT 0x0)
+  // SELECT_ACTION4-7 needs special treatment, they are the 4-click funny response slots on BGEE and only action response slots on BG2EE
+  PATCH_IF (GAME_IS ~eet~) BEGIN
+    SAY SELECT_ACTION4 @5024 /* Must I? */
+    SAY SELECT_ACTION5 @5025 /* If... i-if you're sure. */
+    SAY SELECT_ACTION6 @5026 /*  */
+  END ELSE BEGIN
+    WRITE_LONG SELECT_ACTION4 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION5 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION6 (BNOT 0x0)
+    SAY 0x1E0 @5024			/* Must I? */	/* SAY BGEE_ACTION4 */
+    SAY 0x1E4 @5025			/* If... i-if you're sure. */		/* SAY BGEE_ACTION5 */
+    SAY 0x1E8 @5026			/*  */				/* SAY BGEE_ACTION6 */
+  END
 
 COPY ~BG1Aerie/creatures/B2#KOBCM.cre~ ~override/B2#KOBCM.cre~
 COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
@@ -191,10 +201,7 @@ COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
   SAY SELECT_ACTION1 @5021 /* Faster than Chiktikka Fastpaws! */
   SAY SELECT_ACTION2 @5022 /* I'll do it! */
   SAY SELECT_ACTION3 @5023 /* In Baervan's name, it shall be done. */
-  SAY SELECT_ACTION4 @5024 /* Must I? */
-  SAY SELECT_ACTION5 @5025 /* If... i-if you're sure. */
-  SAY SELECT_ACTION6 @5026 /*  */
-  WRITE_LONG SELECT_ACTION7 (BNOT 0x0)
+  WRITE_LONG SELECT_ACTION7 (BNOT 0x0) /* empty, doesn't need special treatment, see below */
   SAY CRITICAL_HIT @5027 /* Oh, my... */
   SAY CRITICAL_MISS @5028 /*  */
   SAY TARGET_IMMUNE @5029 /* My weapon does nothing! */
@@ -205,6 +212,19 @@ COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
   WRITE_LONG SET_A_TRAP (BNOT 0x0)
   WRITE_LONG HIDDEN_IN_SHADOWS (BNOT 0x0)
   WRITE_LONG PICKED_POCKET (BNOT 0x0)
+  // SELECT_ACTION4-7 needs special treatment, they are the 4-click funny response slots on BGEE and only action response slots on BG2EE
+  PATCH_IF (GAME_IS ~eet~) BEGIN
+    SAY SELECT_ACTION4 @5024 /* Must I? */
+    SAY SELECT_ACTION5 @5025 /* If... i-if you're sure. */
+    SAY SELECT_ACTION6 @5026 /*  */
+  END ELSE BEGIN
+    WRITE_LONG SELECT_ACTION4 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION5 (BNOT 0x0)
+    WRITE_LONG SELECT_ACTION6 (BNOT 0x0)
+    SAY 0x1E0 @5024			/* Must I? */	/* SAY BGEE_ACTION4 */
+    SAY 0x1E4 @5025			/* If... i-if you're sure. */		/* SAY BGEE_ACTION5 */
+    SAY 0x1E8 @5026			/*  */				/* SAY BGEE_ACTION6 */
+  END
 
 // Appends
 APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****  	****  	****  	****  	****~

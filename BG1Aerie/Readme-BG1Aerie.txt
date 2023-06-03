@@ -27,4 +27,8 @@ Version 2.0
 
 Version 2.1
 
-Further EET compatibility fixes.
+- Further EET compatibility fixes, thanks to argent77 pointing out the issue.
+
+Version NEXT_VERSION
+
+- Fix BGEE audio slot misassignment.
