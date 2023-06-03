@@ -106,7 +106,7 @@ COMPILE ~BG1Aerie/Scripts/B2#cAAM5.baf~
 // Copying files
 COPY ~BG1Aerie/shop~ ~override~
 
-// Install the vanilla portraiit if it's missing from the game
+// Install the vanilla portrait if it's missing from the game
 ACTION_IF (NOT FILE_EXISTS_IN_GAME ~NAERIEL.BMP~) BEGIN
   COPY ~BG1Aerie/portraitsBGEE~ ~override~
 END
@@ -264,8 +264,13 @@ COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
   END
 
 // Appends
-APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****  	****  	****  	****  	****~
-  UNLESS ~B2#Aeri~
+ACTION_IF (GAME_IS ~eet~) BEGIN
+  APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****  	****  	****  	****  	****~
+    UNLESS ~B2#Aeri~
+END ELSE BEGIN
+  APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****~
+    UNLESS ~B2#Aeri~
+END
 
 BEGIN @6002 /* Install lighter portrait */
 DESIGNATED 5001
