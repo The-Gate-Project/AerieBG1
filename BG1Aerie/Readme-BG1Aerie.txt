@@ -39,3 +39,6 @@ Thanks to GraionDilach
 
 Version 2.3
 - Fix blurry portraits caused by using the wrong portrait sizes
+
+Version 2.4
+- Added Spanish translation thanks to @alaisFcZ

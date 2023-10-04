@@ -1,6 +1,6 @@
 # Aerie for BG:EE / EET
 
-![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20french%20%7C%20russian%20%7C%20&color=informational)
+![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20french%20%7C%20russian%20%7C%20spanish%20%7C%20&color=informational)
 
 **Autor** : **Coutelier**
 
@@ -57,3 +57,7 @@ Thanks to GraionDilach
 Version 2.3
 
 - Fix blurry portraits caused by using the wrong portrait sizes
+
+Version 2.4
+
+- Added Spanish translation thanks to @alaisFcZ  
