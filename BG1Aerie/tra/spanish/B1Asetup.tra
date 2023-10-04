@@ -1,0 +1,61 @@
+@0    = ~Anillo de protección de Aerie~
+@1    = ~La elfa Aerie creó este anillo mientras estudiaba magia con la bruja Bentha. Es como un anillo de protección ordinario, salvo que también ha sido imbuido con un amuleto para mantener a su portador a salvo de la magia dañina.
+
+ESTADÍSTICAS:
+
+Habilidades equipadas:
+Clase de Armadura: +1
+Tiradas de salvación: +1
+Resistencia Mágica: +10%
+
+Peso: 0~
+@2    = ~Botas para caminar~
+@3    = ~Estas botas se hicieron para caminar, y eso es justo lo que hacen. También son grandes, o al menos lo serían en una persona bastante delgada o menuda.
+
+ESTADÍSTICAS:
+
+Peso: 4~
+@4    = ~Aerie~
+@5    = ~Cuando se le pregunta por su pasado, Aerie guarda silencio durante un rato, obviamente entristecida por el recuerdo. Vivió entre los Avariel, los elfos alados, y fue capturada por esclavistas cuando aún era muy pequeña. Se estremece cuando habla de sus primeros años en el circo, expuesta en una jaula que restringía sus movimientos hasta el punto de que sus alas se atrofiaron. Se infectaron... y Aerie apenas puede hablar de la noche en que la sacaron de la jaula y le cortaron brutalmente las alas para mantenerla con vida. Ya no era útil para aquel circo y, de no ser por la bondad de Quayle, seguramente habría muerto. Él le devolvió la salud y le dio una razón para seguir viviendo, y por respeto a su generosidad aprendió la devoción del dios gnomo Baervan el Errante. Habla de Baervan con afecto, aunque sigue rindiendo tributo a Aerdrie Faenya, y afronta la vida fuera del circo con una combinación de inocencia y asombro, mezclados con una determinación innata para luchar contra la injusticia.~
+@6    = ~Ashur~
+@7    = ~Kyte~
+@8    = ~Tello~
+
+@5000 = ~Aerie para BG:EE~
+@5001 = ~Hice mi mejor esfuerzo, señor.~ [B2#Aeri7]
+@5002 = ~Esto es mucho más emocionante que cualquier circo.~ [B2#Aeriy]
+
+@5004 = ~Tú... ¿quieres que te guíe? I... Haré lo que pueda...~ [B2#Aerib]
+@5005 = ~Me duelen las piernas. Nunca he caminado tanto en mi vida. ¿Podemos... podemos descansar ahora? ¿Podemos?~ [B2#Aeric]
+@5006 = ~No me di cuenta de que habría estado tanto de pie.~ [B2#Aerid]
+@5007 = ~Yo... ¡No dejaré que lastimen a mis amigos!~ [B2#Aeria]
+@5008 = ~¡Te lastimaré si tengo que hacerlo!~ [B2#Aeri8]
+@5009 = ~Uh!~ [B2#Aeril]
+@5010 = ~~ [B2#Aerim]
+@5011 = ~Yo... Necesito algo de curación. Me... me duele tanto...~ [B2#Aerie]
+@5012 = ~(Suspira) No puedo evitar recordar cómo se ven los bosques del norte desde el cielo. Son... son tan majestuosos.~ [B2#Aerin]
+@5013 = ~Yo... Nunca vi mucho de las ciudades del circo. ¿Están todas tan abarrotadas como ahora?~ [B2#Aerio]
+@5014 = ~Oh... tenemos historias así entre mi gente. Estar bajo tierra no es para los avariel.~ [B2#Aerip]
+@5015 = ~Mi... mi madre solía contarme esas historias sobre las cosas terribles que salen por la noche. Pero... oh, debes pensar que soy tonta.~ [B2#Aerir]
+@5016 = ~Si?~ [B2#Aerif]
+@5017 = ~Ayudaré en lo que pueda.~ [B2#Aerig]
+@5018 = ~¿Qué puedo hacer?~ [B2#Aerih]
+@5019 = ~Hmm?~ [B2#Aerix]
+@5020 = ~¿Necesitas algo?~ [B2#Aeri0]
+@5021 = ~¡Más rápido que Chiktikka Patasrapidas!~ [B2#Aerii]
+@5022 = ~¡Lo haré!~ [B2#Aerij]
+@5023 = ~En el nombre de Baervan, lo hare.~ [B2#Aerik]
+@5024 = ~¿Tengo que hacerlo?~ [B2#Aeri_]
+@5025 = ~Si... si... si estás seguro....~ [B2#Aeriu]
+@5026 = ~*suspiro*~ [B2#Aeriv]
+@5027 = ~Oh, mi...~ [B2#Aeriz]
+@5028 = ~OHH!~ [B2#Aeri1]
+@5029 = ~¡Mi arma no hace nada!~ [B2#Aeri2]
+@5030 = ~No, no puedo cargar más... ohh, lo siento. Se me cayó algo...~ [B2#Aeri3]
+@5031 = ~Muy bien.~ [B2#Aeris]
+@5032 = ~haré lo mejor que pueda.~ [B2#Aerit]
+@5033 = ~¡AYÚDENME! ¡AYÚDENME, POR FAVOR!~ [B2Aeri95]
+
+@6000 = ~Aerie en BGEE debe instalarse en BGEE o EET~
+@6001 = ~Modmerge o Argent's DLC Merger son necesarios para poder instalar mods en este juego.~
+@6002 = ~¿Instalar una variante más clara del retrato para Aerie? (Esto cambia su retrato BG2 también en EET.)~

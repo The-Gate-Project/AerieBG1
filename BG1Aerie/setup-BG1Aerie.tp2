@@ -34,7 +34,11 @@ LANGUAGE
 LANGUAGE 
          ~French~
          ~french~
-         ~BG1Aerie/tra/french/B1Asetup.tra~		 
+         ~BG1Aerie/tra/french/B1Asetup.tra~
+LANGUAGE 
+         ~Spanish~
+         ~spanish~
+         ~BG1Aerie/tra/spanish/B1Asetup.tra~
 
 // Component setup
 BEGIN @5000 /* Aerie for BG:EE */
