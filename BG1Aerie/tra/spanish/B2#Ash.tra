@@ -1,4 +1,4 @@
-@0    = ~Hemos oído hablar de tipos nefastos que operan por aquí. Manténgase alerta, ciudadano.~
+@0    = ~Hemos oído hablar de tipos nefastos que operan por aquí. mantente alerta, ciudadano.~
 
 @1    = ~Bueno, traté de advertirte.~
 
@@ -13,13 +13,13 @@ Recuerda... recuerda...'~
 
 @5    = ~Huh?~
 
-@6    = ~<¿NOMBRE? ¿Qué... qué está pasando?~
+@6    = ~¿<CHARNAME>? ¿Qué... qué está pasando?~
 
 @7    = ~Mejor que te vayas, chica, y olvides lo que has visto.~
 
 @8    = ~P-ero...~
 
-@9    = ~¿Eres sordo además de tonto? ¡He dicho que te largues!~
+@9    = ~¿Eres sorda además de tonta? ¡He dicho que te largues!~
 
 @10   = ~Yo-Yo-Yo... *traga*~
 
@@ -73,7 +73,7 @@ Recuerda... recuerda...'~
 
 @35   = ~Pero mientras los dos estemos bien, supongo que todo salió bien.~
 
-@36   = ~Si... si tú o alguno de tus amigos todavía necesita un poco de ayuda, por favor pásate a visitarme. Yo... Me gusta cuando lo haces.~
+@36   = ~Si... si tú o alguno de tus amigos todavía necesita un poco de ayuda, por favor pásate a visitarme. Yo... Me gusta cuando vienes.~
 
 @37   = ~Adios.~
 

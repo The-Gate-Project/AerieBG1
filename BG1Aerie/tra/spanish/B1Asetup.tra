@@ -1,5 +1,5 @@
 @0    = ~Anillo de protección de Aerie~
-@1    = ~La elfa Aerie creó este anillo mientras estudiaba magia con la bruja Bentha. Es como un anillo de protección ordinario, salvo que también ha sido imbuido con un amuleto para mantener a su portador a salvo de la magia dañina.
+@1    = ~La elfa llamada Aerie creó este anillo mientras estudiaba magia con la bruja Bentha. Es como un anillo de protección ordinario, salvo que también ha sido imbuido con un amuleto para mantener a su portador a salvo de la magia dañina.
 
 ESTADÍSTICAS:
 
@@ -23,38 +23,38 @@ Peso: 4~
 
 @5000 = ~Aerie para BG:EE~
 @5001 = ~Hice mi mejor esfuerzo, señor.~ [B2#Aeri7]
-@5002 = ~Esto es mucho más emocionante que cualquier circo.~ [B2#Aeriy]
+@5002 = ~Esto es mucho más divertido que cualquier circo.~ [B2#Aeriy]
 
-@5004 = ~Tú... ¿quieres que te guíe? I... Haré lo que pueda...~ [B2#Aerib]
-@5005 = ~Me duelen las piernas. Nunca he caminado tanto en mi vida. ¿Podemos... podemos descansar ahora? ¿Podemos?~ [B2#Aeric]
+@5004 = ~¿Que... que queréis que yo os dirija? Yo... yo trataré de hacerlo lo mejor que pueda...~ [B2#Aerib]
+@5005 = ~Me duelen tanto las piernas... No había andado tanto en mi vida. ¿Podríamos... podríamos descansar un rato?~ [B2#Aeric]
 @5006 = ~No me di cuenta de que habría estado tanto de pie.~ [B2#Aerid]
-@5007 = ~Yo... ¡No dejaré que lastimen a mis amigos!~ [B2#Aeria]
-@5008 = ~¡Te lastimaré si tengo que hacerlo!~ [B2#Aeri8]
+@5007 = ~¡No! No voy a dejar que hagan daño a mis amigos~ [B2#Aeria]
+@5008 = ~¡Os haré daño si me obligáis a hacerlo!~ [B2#Aeri8]
 @5009 = ~Uh!~ [B2#Aeril]
 @5010 = ~~ [B2#Aerim]
-@5011 = ~Yo... Necesito algo de curación. Me... me duele tanto...~ [B2#Aerie]
-@5012 = ~(Suspira) No puedo evitar recordar cómo se ven los bosques del norte desde el cielo. Son... son tan majestuosos.~ [B2#Aerin]
-@5013 = ~Yo... Nunca vi mucho de las ciudades del circo. ¿Están todas tan abarrotadas como ahora?~ [B2#Aerio]
-@5014 = ~Oh... tenemos historias así entre mi gente. Estar bajo tierra no es para los avariel.~ [B2#Aerip]
-@5015 = ~Mi... mi madre solía contarme esas historias sobre las cosas terribles que salen por la noche. Pero... oh, debes pensar que soy tonta.~ [B2#Aerir]
+@5011 = ~Necesito... necesito vuestra ayuda. Me duele tanto...~ [B2#Aerie]
+@5012 = ~(Suspira) Solo me viene a la memoria cómo se ven los bosques del norte desde el cielo. Son tan... tan majestuosos.~ [B2#Aerin]
+@5013 = ~Nunca... nunca pude conocer las ciudades cuando estaba en el circo. ¿En todas hay tanta gente?~ [B2#Aerio]
+@5014 = ~Mi pueblo también cuenta historias como esas. Vivir bajo tierra no es para los avariel.~ [B2#Aerip]
+@5015 = ~Mi... mi madre solía contarme historias como esas, sobre las cosas espantosas que aparecían por la noche. Sin embargo... Pensaréis que soy una estúpida.~ [B2#Aerir]
 @5016 = ~Si?~ [B2#Aerif]
-@5017 = ~Ayudaré en lo que pueda.~ [B2#Aerig]
+@5017 = ~E-Echaré una mano si soy capaz.~ [B2#Aerig]
 @5018 = ~¿Qué puedo hacer?~ [B2#Aerih]
 @5019 = ~Hmm?~ [B2#Aerix]
-@5020 = ~¿Necesitas algo?~ [B2#Aeri0]
-@5021 = ~¡Más rápido que Chiktikka Patasrapidas!~ [B2#Aerii]
+@5020 = ~¿Necesitáis algo?~ [B2#Aeri0]
+@5021 = ~¡Más veloz que Chiquitaka Garrasrápidas!~ [B2#Aerii]
 @5022 = ~¡Lo haré!~ [B2#Aerij]
-@5023 = ~En el nombre de Baervan, lo hare.~ [B2#Aerik]
+@5023 = ~En nombre de Bervan, se hará.~ [B2#Aerik]
 @5024 = ~¿Tengo que hacerlo?~ [B2#Aeri_]
 @5025 = ~Si... si... si estás seguro....~ [B2#Aeriu]
 @5026 = ~*suspiro*~ [B2#Aeriv]
 @5027 = ~Oh, mi...~ [B2#Aeriz]
 @5028 = ~OHH!~ [B2#Aeri1]
-@5029 = ~¡Mi arma no hace nada!~ [B2#Aeri2]
-@5030 = ~No, no puedo cargar más... ohh, lo siento. Se me cayó algo...~ [B2#Aeri3]
+@5029 = ~¡Mi arma no le hace daño!~ [B2#Aeri2]
+@5030 = ~No puedo cargar con más cosas. Lo siento, voy a dejar algo...~ [B2#Aeri3]
 @5031 = ~Muy bien.~ [B2#Aeris]
-@5032 = ~haré lo mejor que pueda.~ [B2#Aerit]
-@5033 = ~¡AYÚDENME! ¡AYÚDENME, POR FAVOR!~ [B2Aeri95]
+@5032 = ~Lo haré lo mejor que pueda.~ [B2#Aerit]
+@5033 = ~¡Aah! ¡Ayudadme! ¡Ayudadme, por favor!~ [B2Aeri95]
 
 @6000 = ~Aerie en BGEE debe instalarse en BGEE o EET~
 @6001 = ~Modmerge o Argent's DLC Merger son necesarios para poder instalar mods en este juego.~
