@@ -42,3 +42,6 @@ Version 2.3
 
 Version 2.4
 - Added Spanish translation thanks to @alaisFcZ
+
+Version 2.5
+ - Prevent looping Aerie after the Ashur plot.
