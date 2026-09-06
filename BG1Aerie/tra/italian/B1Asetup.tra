@@ -1,0 +1,102 @@
+@0 = ~Anello di Protezione di Aerie~
+
+@1 = ~L'elfa Aerie ha creato questo anello mentre studiava la magia sotto la guida della strega Bentha. È come un comune anello di protezione, ma è stato anche infuso di un incantamento che protegge chi lo indossa dalla magia nociva.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +1
+- Tiri-salvezza: +1
+- Resistenza alla Magia: +10%
+
+Peso: 0~
+
+@2 = ~Stivali da Viaggio~
+
+@3 = ~Questi stivali sono fatti per camminare, ed è proprio quello che fanno. Sono anche grandi, o almeno lo sarebbero per una persona piuttosto esile o minuta.
+
+STATISTICHE:
+
+Peso: 4~
+
+@4 = ~Aerie~
+
+@5 = ~Se interrogata sul suo passato, AERIE si fa silenziosa per qualche istante, ovviamente rattristata dai ricordi. Viveva tra gli avariel, gli elfi alati, ed è stata catturata dagli schiavisti quando era giovanissima. Rabbrividisce quando parla dei suoi primi anni nel circo, in mostra in una gabbia che le impediva i movimenti al punto da far atrofizzare le sue ali. Si infettarono... ed Aerie riesce a malapena a parlare della notte in cui la fecero uscire dalla gabbia e le segarono brutalmente le ali per mantenerla in vita. Non era più di utilità al circo e, se non fosse stato per la gentilezza di Quayle, sarebbe sicuramente morta. Quayle la fece tornare in salute e le diede una ragione per continuare a vivere, tanto che, rispettosa della sua generosità, divenne una devota fedele del dio degli gnomi Baervan Wildwanderer. Parla di Baervan con affetto, anche se rende omaggio a Aerdrie Faenya, e affronta la vita fuori dal circo con innocenza, stupore ma una forte determinazione a combattere contro le ingiustizie.~
+
+@6 = ~Ashur~
+
+@7 = ~Kyte~
+
+@8 = ~Tello~
+
+@5000 = ~Aerie per BG:EE~
+
+@5001 = ~Io... io ho provato... al mio meglio, signore.~ [B2#Aeri7]
+
+@5002 = ~Questo è molto più eccitante del circo!~ [B2#Aeriy]
+
+@5004 = ~Tu... tu vuoi che io guidi il gruppo? Io... farò del mio meglio...~ [B2#Aerib]
+
+@5005 = ~Ahhh, le gambe mi fanno male... Non ho mai camminato così tanto in tutta la mia vita! Possiamo... possiamo riposare, adesso, per favore?~ [B2#Aeric]
+
+@5006 = ~Non avevo compreso che ci sarebbero state così tante perdite di tempo...~ [B2#Aerid]
+
+@5007 = ~Io... non permetterò che ai miei amici venga fatto del male!~ [B2#Aeria]
+
+@5008 = ~Ti farò del male, se ne sarò costretta!~ [B2#Aeri8]
+
+@5009 = ~Ahi!~ [B2#Aeril]
+
+@5010 = ~~ [B2#Aerim]
+
+@5011 = ~Oh... Ho... ho bisogno di cure... Oh, fa così male!~ [B2#Aerie]
+
+@5012 = ~Non posso fare a meno di ricordare come apparivano le foreste del nord dal cielo. Sono... così maestose!~ [B2#Aerin]
+
+@5013 = ~Non ho... mai visto molto delle città stando nel circo. Sono tutte affollate come questa?~ [B2#Aerio]
+
+@5014 = ~Oooh... Abbiamo delle storie simili tra la mia gente. Stare sottoterra non è proprio adatto agli avariel...~ [B2#Aerip]
+
+@5015 = ~Mia madre... era solita raccontarmi storie simili sulle cose terribili che uscivano durante la notte. Ma... ah, devi pensare che io sia sciocca...~ [B2#Aerir]
+
+@5016 = ~S-sì?~ [B2#Aerif]
+
+@5017 = ~Aiuterò come posso.~ [B2#Aerig]
+
+@5018 = ~Cosa posso fare?~ [B2#Aerih]
+
+@5019 = ~Mmm?~ [B2#Aerix]
+
+@5020 = ~Hai bisogno di qualcosa?~ [B2#Aeri0]
+
+@5021 = ~Più veloce di Chiktikka Fastpaws!~ [B2#Aerii]
+
+@5022 = ~Lo farò.~ [B2#Aerij]
+
+@5023 = ~Nel nome di Baervan, sarà fatto.~ [B2#Aerik]
+
+@5024 = ~Devo proprio?~ [B2#Aeri_]
+
+@5025 = ~Se... ne sei... sicuro...~ [B2#Aeriu]
+
+@5026 = ~*Sigh*~ [B2#Aeriv]
+
+@5027 = ~Oh, mio dio!~ [B2#Aeriz]
+
+@5028 = ~OHH!~ [B2#Aeri1]
+
+@5029 = ~La mia arma non fa nulla!~ [B2#Aeri2]
+
+@5030 = ~Non posso trasportare altro. Mi dispiace, ho mollato qualcosa.~ [B2#Aeri3]
+
+@5031 = ~D'accordo.~ [B2#Aeris]
+
+@5032 = ~Farò del mio meglio.~ [B2#Aerit]
+
+@5033 = ~AHHH! AIUTO! AIUTO, TI PREGOOO!~ [B2Aeri95]
+
+@6000 = ~Aerie in BGEE deve essere installato su BGEE o EET~
+
+@6001 = ~Prima di installare mod su questo gioco è necessario installare Modmerge o DLC Merger di Argent.~
+
+@6002 = ~Installare una variante più chiara del ritratto di Aerie? (In EET modifica anche il suo ritratto in BG2.)~
