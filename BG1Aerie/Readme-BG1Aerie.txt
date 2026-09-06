@@ -48,4 +48,6 @@ Version 2.5
 
 Version 2.6
 - Added Italian translation thanks to @Sauler89
+- Added Joining reply to Aerie after retrieving her boots.
+  - Two reused lines and one new line of dialog.
 

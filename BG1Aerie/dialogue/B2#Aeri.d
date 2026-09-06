@@ -158,6 +158,7 @@ IF ~Global("B2#AeriSTO","GLOBAL",1)
   IF ~Global("B2#AeriQST","GLOBAL",1) PartyHasItem("B2#BTSA")~ THEN REPLY @48 GOTO AQ16
   IF ~~ THEN REPLY @26 GOTO 27
   IF ~~ THEN REPLY @27 GOTO 28
+  IF ~Global("B2#AeriQST","GLOBAL",2)~ THEN REPLY @133 GOTO B2#JOIN // New
 END
 
 IF ~~ THEN BEGIN 25
@@ -202,6 +203,7 @@ IF ~~ THEN BEGIN 33
   IF ~Global("B2#AeriQST","GLOBAL",1) PartyHasItem("B2#BTSA")~ THEN REPLY @48 GOTO AQ16
   IF ~~ THEN REPLY @26 GOTO 27
   IF ~~ THEN REPLY @27 GOTO 28
+  IF ~Global("B2#AeriQST","GLOBAL",2)~ THEN REPLY @133 GOTO B2#JOIN // New
 END
 
 IF ~~ THEN BEGIN 26
@@ -390,6 +392,11 @@ TakePartyItem("B2#BTSA")
 AddexperienceParty(300)
 SetGlobalTimer("B2#Ash","GLOBAL",TWO_DAYS)
 ~ EXIT
+END
+
+IF ~~ THEN BEGIN B2#JOIN // New
+  SAY @134
+  IF ~~ THEN DO ~SetGlobal("B2#AeriJoined","LOCALS",1) JoinParty()~ EXIT 
 END
 
 // INTERJECTIONS
