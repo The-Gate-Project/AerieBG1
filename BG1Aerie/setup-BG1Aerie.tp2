@@ -40,6 +40,11 @@ LANGUAGE
          ~spanish~
          ~BG1Aerie/tra/spanish/B1Asetup.tra~
 
+LANGUAGE
+         ~Italiano~
+         ~italian~
+         ~BG1Aerie/tra/italian/B1Asetup.tra~
+
 // Component setup
 BEGIN @5000 /* Aerie for BG:EE */
 DESIGNATED 5000
