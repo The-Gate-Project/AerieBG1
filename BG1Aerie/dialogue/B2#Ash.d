@@ -166,8 +166,8 @@ IF ~~ THEN BEGIN 14
    = @36
    = @37
   IF ~~ THEN DO ~SetGlobal("B2#AeriAMB","GLOBAL",12)
-EscapeArea()
 EndCutSceneMode()
+EscapeArea()
 ~ EXIT
 END
 END

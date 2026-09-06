@@ -1,13 +1,13 @@
 /////                                                  \\\\\
-///// Tutu/BGT/BGEE/EET CPM library: BGEE              \\\\\
+///// oBG/Tutu/BGT/BGEE/EET CPM library: BGEE          \\\\\
 /////                                                  \\\\\
 
 /*
 
 A library to declare variabes to allow unified installations of BG content
-across all modern platforms: BGEE or the conversions BGT, EET, and Tutu. 
+across all platforms: oBG, BGEE or the conversions BGT, EET, and Tutu.
 
-This particular library is for BGEE games. 
+This particular library is for oBG games. 
 
 One of these four libraries (EET is in the local EET folder) should be called 
 from a GAME_IS check, for example Tweaks:
@@ -15,21 +15,18 @@ from a GAME_IS check, for example Tweaks:
 https://github.com/Gibberlings3/Tweaks-Anthology/blob/master/cdtweaks/lib/g3_cpmvars_master.tpa
 
 used:
-  Amaurea's BG Portraits, as amaureasbg1portraits/g3_bgee_cpmvars.tpa [symbolic link]
-  Dragon Age Portraits, as da_portraits/g3_bgee_cpmvars.tpa [symbolic link]
-  gavin, as gavin/lib/g3_bgee_cpmvars.tpa [symbolic link]
-  Glam's NPC Pack, as glamnpcpack/libraries/g3_bgee_cpmvars.tph [local symlink]
-  IWDification, as iwdification/tpa/g3_bgee_cpmvars.tpa [symbolic link]
-  Lore from Learning, as cdlore/lib/g3_bgee_cpmvars.tpa [symbolic link]
-  mur'neth, as mur'neth/lib/g3_bgee_cpmvars.tpa [symbolic link]
-  Plasmocat's BG NPC Portraits in BG2 Style, as plasmobg1bg2/lib/g3_bgee_cpmvars.tph [local symlink]
-  Project Javelin, as cd_project_javelin/lib/g3_bgee_cpmvars.tpa [symbolic link]
-  RoorenArt's Portrait Pack, as roorenart_bg2/lib/g3_bgee_cpmvars.tpa [local symlink]
-  The Calling, as thecalling/lib/g3_bgee_cpmvars.tpa [symbolic link]
-  Tweaks Anthology, as cdtweaks/lib/g3_bgee_cpmvars.tpa [symbolic link]
+  Amaurea's BG Portraits, as amaureasbg1portraits/g3_bg_cpmvars.tpa [symbolic link]
+  Dragon Age Portraits, as da_portraits/g3_bg_cpmvars.tpa [symbolic link]
+  IWDification, as iwdification/tpa/g3_bg_cpmvars.tpa [symbolic link]
+  mur'neth, as mur'neth/lib/g3_bg_cpmvars.tpa [symbolic link]
+  Plasmocat's BG NPC Portraits in BG2 Style, as plasmobg1bg2/lib/g3_bg_cpmvars.tph [local symlink]
+  Project Javelin, as cd_project_javelin/lib/g3_bg_cpmvars.tpa [symbolic link]
+  RoorenArt's Portrait Pack, as roorenart_bg2/lib/g3_bg_cpmvars.tpa [local symlink]
+  The Calling, as thecalling/lib/g3_bg_cpmvars.tpa [symbolic link]
+  Tweaks Anthology, as cdtweaks/lib/g3_bg_cpmvars.tpa [symbolic link]
 
 platform:
-  bgee
+  obg
  
 version history: 
   unknown - creation
@@ -37,11 +34,15 @@ version history:
 
 */
 
-/* Declaration of BG:EE Platform Variables */
-//ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+/* Declaration of BG Platform Variables */
+
+// note from Cam - this is in no way correct. This is copied from the bgee file, since it's the closest to BG assets,
+// and then I double-checked the vars that were actually important for Tweaks w.r.t. BG components. 
+
+//ACTION_IF GAME_IS ~bg1 totsc~ THEN BEGIN
 	/* tp2, d, and baf parsing variables */
-	OUTER_SPRINT "tutorbgt" "bgee"
-	OUTER_SPRINT "tutubgtbgee" "bgee"
+	OUTER_SPRINT "tutorbgt" "tutu"
+	OUTER_SPRINT "tutubgtbgee" "tutu"
 	OUTER_SPRINT "bgdreams" "DREAM"
 	OUTER_SPRINT "bgdream1" "2"
 	OUTER_SPRINT "bgdream2" "3"
@@ -122,7 +123,7 @@ version history:
 	OUTER_SET firebeadstate2 = 1
 	OUTER_SET hentolstate1 = 12
 	OUTER_SET housg3state0 = 1
-  OUTER_SET housg3state5 = 0
+	OUTER_SET housg3state5 = 0
 	OUTER_SET xanpstate3 = 1
 	OUTER_SET xanpstate4 = 0
 

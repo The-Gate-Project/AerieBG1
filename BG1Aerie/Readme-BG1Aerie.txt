@@ -45,3 +45,7 @@ Version 2.4
 
 Version 2.5
  - Prevent looping Aerie after the Ashur plot.
+
+Version 2.6
+- Added Italian translation thanks to @Sauler89
+

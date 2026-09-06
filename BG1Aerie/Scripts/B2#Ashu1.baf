@@ -1,30 +1,30 @@
 IF
-  Global("B2#AeriAMB","GLOBAL",0)
-  TimeGT(5)
-  TimeLT(18)
-  Global("MeHide","LOCALS",0)
+	Global("B2#AeriAMB","GLOBAL",0)
+	TimeGT(5)
+	TimeLT(18)
+	Global("MeHide","LOCALS",0)
 THEN
-  RESPONSE #100
-    SetGlobal("MeHide","LOCALS",1)
-    Deactivate(Myself)
+	RESPONSE #100
+		SetGlobal("MeHide","LOCALS",1)
+		Deactivate(Myself)
 END
 
 IF
-  Global("B2#AeriAMB","GLOBAL",0)
-  Or(2)
-  TimeLT(6)
-  TimeGT(17)
-  Global("MeHide","LOCALS",1)
+	Global("B2#AeriAMB","GLOBAL",0)
+	OR(2)
+	TimeLT(6)
+	TimeGT(17)
+	Global("MeHide","LOCALS",1)
 THEN
-  RESPONSE #100
-    Activate(Myself)
-    SetGlobal("MeHide","LOCALS",0)
+	RESPONSE #100
+		Activate(Myself)
+		SetGlobal("MeHide","LOCALS",0)
 END
 
 IF
-  Global("B2#AeriAMB","GLOBAL",8)
+	Global("B2#AeriAMB","GLOBAL",8)
 THEN
-  RESPONSE #100
-    Enemy()
-    Continue()
+	RESPONSE #100
+		Enemy()
+		Continue()
 END

@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20french%20%7C%20russian%20%7C%20spanish%20%7C%20&color=informational)
 
-**Autor** : **Coutelier**
+**Author** : **Coutelier**
 
 [Link to original Mod Forum](https://forums.beamdog.com/discussion/38824/aerie-in-bg-ee-v1-1/p1)
 
@@ -65,3 +65,7 @@ Version 2.4
 Version 2.5
 
 - Prevent looping Aerie after the Ashur plot.
+
+Version 2.6
+
+- Added Italian translation thanks to @Sauler89  

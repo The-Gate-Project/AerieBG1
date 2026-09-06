@@ -1,11 +1,11 @@
 // --------------------------------------------
 // Basics
-BACKUP ~BG1Aerie/backup~
+BACKUP ~weidu_external/BG1Aerie/backup~
 AUTHOR ~Coutelier (https://forums.beamdog.com/discussion/38824/aerie-in-bg-ee-v1-1/p1)~
-VERSION ~2.5~
+VERSION ~2.6~
 
 // --------------------------------------------
-// BG1 Aerie Mod v2.5
+// BG1 Aerie Mod v2.6
 // --------------------------------------------
 
 ALWAYS
@@ -39,11 +39,11 @@ LANGUAGE
          ~Spanish~
          ~spanish~
          ~BG1Aerie/tra/spanish/B1Asetup.tra~
-
 LANGUAGE
          ~Italiano~
          ~italian~
          ~BG1Aerie/tra/italian/B1Asetup.tra~
+
 
 // Component setup
 BEGIN @5000 /* Aerie for BG:EE */
@@ -274,10 +274,10 @@ COPY ~BG1Aerie/creatures/B2#Aeri.cre~ ~override/B2#Aeri.cre~
 
 // Appends
 ACTION_IF (GAME_IS ~eet~) BEGIN
-  APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****  	****  	****  	****  	****~
+  APPEND ~pdialog.2da~ ~B2#Aeri                B2#AeriP                ****                ****                ****                ****                ****                ****~
     UNLESS ~B2#Aeri~
 END ELSE BEGIN
-  APPEND ~pdialog.2da~ ~B2#Aeri  	B2#AeriP  	****  	****~
+  APPEND ~pdialog.2da~ ~B2#Aeri                B2#AeriP                ****                ****~
     UNLESS ~B2#Aeri~
 END
 
@@ -287,3 +287,10 @@ LABEL ~Coutelier-AerieBG1-Lighter-Portrait~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @6000
 
 COPY ~BG1Aerie/portraits~ ~override~
+
+/*
+BEGIN ~Aerie recrutable in BG1~
+DESIGNATED 5002
+LABEL ~Coutelier-AerieBG1-NPC~
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @6000
+*/
